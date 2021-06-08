@@ -1,9 +1,9 @@
 
 pipeline {
   agent {
-    docker {
-      image 'goforgold/build-container:latest'
-    }
+    
+      label "master"
+    
   }
   stages {
     stage('Build') {
